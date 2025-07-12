@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DreamPlay</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🎮 DreamPlay</h1>
+    <p>Create any game instantly with AI + Plugins</p>
+  </header>
+
+  <section class="login-ui">
+    <h2>Login</h2>
+    <input type="text" placeholder="Username" />
+    <input type="password" placeholder="Password" />
+    <button onclick="login()">Login</button>
+  </section>
+
+  <section class="ai-builder">
+    <h2>AI Game Prompt</h2>
+    <input type="text" id="gamePrompt" placeholder="e.g. Open world jungle explorer" />
+    <button onclick="generateGame()">Generate</button>
+    <div id="gameLog"></div>
+  </section>
+
+  <section class="genre-select">
+    <h2>Game Genre</h2>
+    <select>
+      <option>Open World</option>
+      <option>FPS</option>
+      <option>RPG</option>
+      <option>Racing</option>
+      <option>Simulator</option>
+      <option>Custom</option>
+    </select>
+  </section>
+
+  <section class="plugin-loader">
+    <h2>Plugins</h2>
+    <button>Unity Plugin</button>
+    <button>Unreal Plugin</button>
+    <button>Neuroforge Plugin</button>
+  </section>
+
+  <section class="multiplayer">
+    <h2>Multiplayer Setup</h2>
+    <input type="text" placeholder="Game Code" />
+    <button>Host Lobby</button>
+    <button>Join Game</button>
+  </section>
+
+  <section class="export-options">
+    <h2>Export Your Game</h2>
+    <button>Export .unitypackage</button>
+    <button>Export .uproject</button>
+    <button>Export .neuroproj</button>
+  </section>
+
+  <footer>
+    <p>DreamPlay © 2025</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
